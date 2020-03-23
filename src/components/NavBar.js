@@ -1,10 +1,27 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <div>
-      {/*{code here}*/}
+    <div className="navbar">
+      <ul>
+
+     <li><NavLink
+        to="/"
+        // activeStyle={{
+          //   fontWeight: "bold",
+          //   color: "red"
+          // }}
+          >
+        Home
+      </NavLink></li> 
+
+      <li><NavLink to="/movies">Movies</NavLink></li>
+
+     <li><NavLink to="/directors">Directors</NavLink></li> 
+
+      <li><NavLink to="/actors">Actors</NavLink></li>
+          </ul>
     </div>
   );
 };
